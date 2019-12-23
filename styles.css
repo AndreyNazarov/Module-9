@@ -1,0 +1,255 @@
+
+
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+}
+
+:root {
+  --white-color: #ffffff;
+  --white-invisible-color: rgba(255, 255, 255, 0);
+  --red-color: #ff4e50;
+  --dark-color: #333333;
+  --grey-color: #666666;
+  --yellow-color: #ffa507;
+  --ligthgreen-color: #1cd7ad;
+  --blue-color: #4e73db;
+}
+
+
+
+.container-fluid {
+  background: url(img/thema.png) center no-repeat;
+  background-size: cover;
+  margin-bottom: 50px;
+  background-color: rgba( 0, 0, 0, 0.8);
+}
+
+
+nav {
+  display: flex;
+  justify-content: center;
+  padding-top: 20px;
+  margin-bottom: 125px;
+}
+
+nav a {
+  font-family: "Montserrat-Bold";
+  font-size: 14px;
+  color: var(--white-color);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 90px;
+  height: 36px;
+  border: 2px solid var(--white-invisible-color);
+  border-radius: 18px;
+  transition: 0.2s linear;
+  text-transform: capitalize;
+}
+
+nav a:hover {
+  text-decoration: none;
+  color: var(--white-color);
+  border-color: var(--white-color);
+  transition: 0.2s linear;
+  font-weight: 700;
+}
+
+li{
+  text-decoration: none;
+  list-style: none;
+}
+
+h1 {
+  text-align: center;
+  margin-bottom: 40px;
+  
+}
+
+h1 a {
+  font-family: "Montserrat-Bold";
+  font-size: 20px;
+  color: var(--white-color);
+  text-transform: uppercase;
+  font-weight: bold;
+}
+
+h1 a:hover {
+  text-decoration: none;
+  color: var(--white-color);
+}
+
+
+header h2 {
+  font-family: "Montserrat-Bold";
+  font-size: 50px;
+  color: var(--white-color);
+  text-transform: uppercase;
+  text-align: center;
+  margin-bottom: 20px;
+  font-weight: bold;
+}
+
+header p {
+  font-family: "Roboto-Light";
+  font-size: 24px;
+  color: var(--white-color);
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+header p::first-letter {
+  text-transform: uppercase;
+}
+
+
+.button {
+  text-align: center;
+}
+
+button:focus {
+  outline-style: none;
+}
+
+header button {
+  width: 280px;
+  height: 40px;
+  border-style: none;
+  border-radius: 20px;
+  background-color: var(--red-color);
+  cursor: pointer;
+  font-family: "Montserrat-Bold";
+  font-size: 14px;
+  color: var(--white-color);
+  margin-bottom: 138px;
+  font-weight: bold;
+}
+
+header button::first-letter {
+  text-transform: uppercase;
+}
+
+main h2 {
+  font-family: "Montserrat-Bold";
+  font-size: 22px;
+  color: var(--dark-color);
+  text-align: center;
+  margin: 0 auto 30px;
+  font-weight: bold;
+}
+
+main h2::first-letter {
+  text-transform: uppercase;
+}
+
+
+.partner {
+  text-align: center;
+  max-width: 260px;
+  margin: 0 auto 30px;
+  position: relative;
+}
+
+.partner::before {
+  content: "";
+  display: block;
+  background-position-x: center;
+  width: 122px;
+  height: 122px;
+  margin: 0 auto;
+  border-radius: 50%;
+}
+
+.card1::before {
+  background: url(img/lady.png) no-repeat;
+}
+
+.card2::before {
+  background: url(img/guy.png) no-repeat;
+}
+
+.card3::before {
+  background: url(img/man.png) no-repeat;
+}
+
+.card4::before {
+  background: url(img/girl.png) no-repeat;
+}
+
+.partner h3 {
+  margin-bottom: 20px;
+  font-weight: bold;
+}
+
+.partner a {
+  text-decoration: none;
+  font-family: "Montserrat-Bold";
+  font-size: 14px;
+  color: var(--dark-color);
+  text-transform: capitalize;
+}
+
+.partner p {
+  font-family: "Roboto-Light";
+  font-size: 14px;
+  color: var(--grey-color);
+}
+
+.partner a::after {
+  content: "";
+  display: block;
+  width: 40px;
+  height: 40px;
+  margin: 0 auto 20px;
+  border: 4px solid var(--white-color);
+  border-radius: 50%;
+  position: absolute;
+  top: 82px;
+  right: 50px;
+}
+
+.card1 a::after {
+  background: url(img/telegram.png) no-repeat var(--red-color) center;
+}
+
+.card2 a::after {
+  background: url(img/chemia.png) no-repeat var(--yellow-color)
+    center;
+}
+
+.card3 a::after {
+  background: url(img/math.png) no-repeat
+    var(--ligthgreen-color) center;
+}
+
+.card4 a::after {
+  background: url(img/tv.png) no-repeat var(--blue-color)
+    center;
+}
+
+
+.button {
+  text-align: center;
+}
+
+main button {
+  width: 280px;
+  height: 40px;
+  border-style: none;
+  background: none;
+  border: 2px solid var(--red-color);
+  border-radius: 20px;
+  cursor: pointer;
+  font-family: "Montserrat-Bold";
+  font-size: 14px;
+  color: var(--red-color);
+  margin-bottom: 57px;
+  font-weight: bold;
+}
+
+main button::first-letter {
+  text-transform: uppercase;
+}
